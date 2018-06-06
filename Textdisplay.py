@@ -49,6 +49,7 @@ class Mirror:
         self.label.pack_forget()
 
     def setweather(self):
+
         return
 
 
