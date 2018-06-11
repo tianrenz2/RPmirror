@@ -2,7 +2,7 @@ from email.mime.text import MIMEText
 import smtplib
 
 def sendemail():
-    FROM = 'fromemail
+    FROM = 'fromemail'
 ##    SENTTo = 'email@gmail.com'
     SENTTo = 'toemail@gmail.com'
     SUBJECT = "Alarm"
