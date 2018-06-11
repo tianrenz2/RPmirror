@@ -2,10 +2,11 @@ from email.mime.text import MIMEText
 import smtplib
 
 def sendemail():
-    FROM = 'Silver@uci.edu'
-    SENTTo = 'amyelsayed@gmail.com'
-    SUBJECT = "Hello!"
-    TEXT = "This message was sent by Silver"
+    FROM = 'fromemail
+##    SENTTo = 'email@gmail.com'
+    SENTTo = 'toemail@gmail.com'
+    SUBJECT = "Alarm"
+    TEXT = "INTRUDER INTRUDER!"
     msg = MIMEText('body')
     msg['Subject'] = 'subject'
     msg['From'] = "..."
@@ -15,12 +16,7 @@ def sendemail():
     mail.ehlo()
     mail.starttls()
     mail.ehlo()
-    mail.login("affinemirror", "howareyouiman")
-    # mail.login('kufeilin@gmail.com','kufeilin2017')
+    mail.login("email", "password")
     mail.sendmail('affinemirror@gmail.com', SENTTo, TEXT)
     print("Sent Succesffuly")
     mail.close()
-
-
-if __name__ == "__main__":
-    sendemail()
